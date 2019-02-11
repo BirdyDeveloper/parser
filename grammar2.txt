@@ -1,0 +1,43 @@
+#rules
+S -> O
+O -> X or X
+O -> X
+X -> A xor A
+X -> A
+A -> R and R
+A -> R
+R -> L shr L
+R -> L
+L -> N shl N
+L -> N
+N -> not V
+N -> V
+V -> a
+V -> b
+V -> c
+V -> (S)
+#non terminals
+S
+O
+X
+A
+R
+L
+N
+V
+#terminals
+or
+xor
+and
+shr
+shl
+not
+a
+b
+c
+(
+)
+eps
+#start
+S
+@SLR

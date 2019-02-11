@@ -1,0 +1,38 @@
+#rules
+E -> T E'
+E' -> + T E'
+E' -> eps
+T -> F T'
+T' -> * F T'
+T' -> eps
+F -> a
+F -> b
+F -> c
+F -> d
+F -> e
+F -> f
+F -> g
+F -> n
+F -> ( E )
+#start
+E
+#non terminals
+E
+E'
+T
+T'
+F
+#terminals
+eps
++
+*
+(
+)
+a 
+b 
+c
+d
+e
+f
+g
+@LL(1)

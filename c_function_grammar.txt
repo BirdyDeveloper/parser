@@ -1,0 +1,30 @@
+#rules
+X -> S
+S -> T id ( A )
+T -> id M
+A -> eps
+A -> T id A'
+A' -> eps
+A' -> , T id A'
+M -> eps
+M -> &
+M -> * M
+#non terminals
+X
+S
+T
+A
+A'
+M
+#terminals
+(
+)
+id
+&
+*
+,
+eps
+#start
+X
+@SLR
+

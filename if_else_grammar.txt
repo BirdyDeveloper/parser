@@ -1,0 +1,17 @@
+#rules
+X -> S
+S -> I
+S -> statement
+I -> if S 
+I -> if S else S 
+#non terminals
+X
+S
+I
+#terminals
+statement
+if
+else
+#start
+X
+@SLR

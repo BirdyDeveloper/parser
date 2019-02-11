@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title> Grammar Tree </title>
+    <link rel="stylesheet" href="treant-js/Treant.css">
+    <link rel="stylesheet" href="tree.css">
+    <link rel="stylesheet" href="page_style.css">
+</head>
+<body>
+    
+   <section class="container">
+       <div class="left-half">
+          <h1 id="parser_string_place"> 
+             <script src="parser_string.js"></script> 
+          </h1>
+          <div class="chart" id="my_tree"></div>
+          <script src="treant-js/vendor/raphael.js"></script>
+          <script src="treant-js/Treant.js"></script>
+          <script src="tree.js"></script>
+          <script> new Treant( chart_config )</script> 
+       </div>
+     
+       <div class="right-half" id="info">
+          <div class="follow_first_style" id="first_place"> 
+            <script src="first.js"></script>
+          </div>
+          <div class="follow_first_style" id="follow_place"> 
+           <script src="follow.js"></script>
+          </div>
+          <div id="move_table_place" class="move_table_wrapper">
+            <table id="move_table_table" class="move_table">
+              <tbody class="move_table_tbody">
+                <tr>
+                  <td class="td-move_table">  </td>
+                </tr>
+              </tbody>
+            </table>
+            <script src="move_table.js"></script>
+          </div>
+       </div>
+    </section>
+
+</body>
+</html>
+

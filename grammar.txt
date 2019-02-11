@@ -1,0 +1,54 @@
+#rules
+S -> O
+O -> X O'
+O' -> or O
+O' -> eps
+X -> A X'
+X' -> xor X
+X' -> eps
+A -> N A'
+A' -> and A
+A' -> eps
+R -> L R'
+R' -> shl R
+R' -> eps
+L -> N L'
+L' -> shr L
+L' -> eps
+N -> not V
+N -> V
+V -> a
+V -> b
+V -> c
+V -> ( S )
+#non terminals
+S 
+N 
+A 
+O 
+X 
+V 
+R 
+L
+S' 
+A' 
+O' 
+X' 
+R' 
+L'
+#terminals
+(
+) 
+not 
+and 
+or 
+xor 
+eps 
+a 
+b 
+c 
+shr 
+shl
+#start
+S
+@LL(1)

@@ -1,0 +1,14 @@
+#rules
+X -> S
+S -> ( S ) S
+S -> eps
+#terminals
+(
+)
+eps
+#non terminals
+S
+X
+#start
+X
+@SLR

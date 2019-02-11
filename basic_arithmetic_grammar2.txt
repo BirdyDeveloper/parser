@@ -1,0 +1,27 @@
+#rules
+X -> E
+E -> E + T
+E -> T
+T -> T * F
+T -> F
+F -> ( E )
+F -> a
+F -> b
+F -> c
+#non terminals
+X
+E
+T
+F
+#terminals
+a
+b
+c
+(
+)
+eps
++
+*
+#start
+X
+@SLR
